@@ -1,6 +1,6 @@
 # Project Brief: Real Estate Website
-# Project Name:  Estate – Explore Homes That Fit Your Dreams
-# Technology Stack: React JS, Tailwind CSS, Web API, Toastify (Toasta Library)
+Project Name:  Estate – Explore Homes That Fit Your Dreams
+Technology Stack: React JS, Tailwind CSS, Web API, Toastify (Toasta Library)
 
 # Project Overview:
 A responsive, user-friendly real estate website built using React JS and Tailwind CSS. The site showcases featured properties, completed projects, customer testimonials, and a contact form powered by a Web API. Users can navigate through a sleek project slider and submit inquiries via the contact form with real-time feedback using the Toastify notification library.
