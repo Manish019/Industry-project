@@ -25,7 +25,7 @@ const Testimonial = () => {
     {Array.from({ length: testimonial.rating }, (items, index) => (
 
 <img key={index} src={assets.star_icon} alt="star" className='w-5 h-5 inline-block' />
-    ))};
+    ))}
 </div>
 <p>{testimonial.text}</p>
             </div>
