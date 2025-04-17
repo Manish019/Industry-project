@@ -1,15 +1,14 @@
 import React from 'react'
+import { toast } from 'react-toastify';
 
 
 const Contact = () => {
-    const [result, setResult] = React.useState("");
-
+    // Remove the result state since we'll use only toast
     const onSubmit = async (event) => {
       event.preventDefault();
-      setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "d43f7cc1-e01b-4366-9808-eb2e489b061f");
+      formData.append("access_key", "0ea2fc0f-c62b-42bb-a528-9145ac53398e");
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -19,11 +18,11 @@ const Contact = () => {
       const data = await response.json();
   
       if (data.success) {
-        setResult("Form Submitted Successfully");
+        toast.success("Form Submitted Successfully");
         event.target.reset();
       } else {
         console.log("Error", data);
-        setResult(data.message);
+        toast.error(data.message);
       }
     };
 
@@ -55,7 +54,9 @@ const Contact = () => {
 <textarea className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none" name="message" placeholder="Message" required></textarea>
 </div>
 
-    <button type="submit" className='border-1 mx-auto text-center border-white px-6 py-3 bg-[rgb(15_15_15)] text-white rounded-full hover:bg-[brown] hover:text-[white]'>Send Message </button>
+    <button type="submit" className='border-1 mx-auto text-center border-white px-6 py-3 bg-[rgb(15_15_15)] text-white rounded-full hover:bg-[brown] hover:text-[white]'>
+      Send Message
+    </button>
 </form>
 
 
