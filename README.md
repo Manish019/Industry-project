@@ -1,12 +1,35 @@
-# React + Vite
+# Project Brief: Real Estate Website
+# Project Name:  Estate – Explore Homes That Fit Your Dreams
+# Technology Stack: React JS, Tailwind CSS, Web API, Toastify (Toasta Library)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Overview:
+A responsive, user-friendly real estate website built using React JS and Tailwind CSS. The site showcases featured properties, completed projects, customer testimonials, and a contact form powered by a Web API. Users can navigate through a sleek project slider and submit inquiries via the contact form with real-time feedback using the Toastify notification library.
 
-Currently, two official plugins are available:
+🧩 Key Features:
+# 1. Landing Page with Hero Section
+Eye-catching hero banner with a headline and CTA buttons.
+Smooth scroll navigation to sections like About, Projects, Testimonials, and Contact.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 2. About Section
+Displays company background, achievements (years of excellence, projects delivered), and a visual image block.
 
-## Expanding the ESLint configuration
+# 3. Project Slider (React Carousel)
+A functional and responsive project carousel built using a React slider library (e.g., react-slick).
+Projects display title, price, and location.
+Slider is swipeable on mobile and clickable on desktop.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 4. Customer Testimonials
+A clean, grid-based layout showcasing customer reviews.
+Includes names, titles, star ratings, and quotes.
+
+# 5. Contact Form with Web API
+A fully functional contact form.
+Fields: Name, Email, Message.
+On submission, data is sent to a backend Web API (e.g., Node.js/Express or third-party service).
+Success or error feedback is shown using Toastify notifications (react-toastify).
+
+# 6. Responsive Design
+Built using Tailwind CSS to ensure responsiveness across all screen sizes.
+
+Mobile-first layout with utilities like flex, grid, gap, w-full, etc.
+![Real State](https://github.com/user-attachments/assets/a51e50f0-319b-41f2-956f-18b9e19152a2)
