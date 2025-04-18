@@ -18,7 +18,7 @@ import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
 import close_icon from './close.png'
-import house_banner from './House_banner.jpg'
+import house_banner from './house_banner.jpg'
 
 export const assets = {
     logo,
