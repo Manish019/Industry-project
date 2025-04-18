@@ -1,5 +1,6 @@
 import React from 'react'
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion';
 
 
 const Contact = () => {
@@ -28,7 +29,12 @@ const Contact = () => {
 
 
   return (
-    <div className='container mx-auto w-full overflow-hidden
+    <motion.div
+    initial={{ opacity: 0, x: -100 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, delay: 0.3 }}
+    
+    className='container mx-auto w-full overflow-hidden
     p-14 md:px-20 lg:px-32' id='contact'> 
         <h2 className='text-center text-2xl sm:text-4xl font-bold mb-2 text-[#cf0909]'>Contact    <span className='underline underline-offset-4 text-black decoration-1 under font-light'>With Us</span>
         </h2>
@@ -60,7 +66,7 @@ const Contact = () => {
 </form>
 
 
-</div>
+</motion.div>
   );
 };
 

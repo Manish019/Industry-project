@@ -1,4 +1,5 @@
 import logo from './logo.svg'
+import logo_main from './logos.png'
 import logo_dark from './logo_dark.svg'
 import cross_icon from './cross_icon.svg'
 import menu_icon from './menu_icon.svg'
@@ -17,9 +18,11 @@ import profile_img_1 from './profile_img_1.png'
 import profile_img_2 from './profile_img_2.png'
 import profile_img_3 from './profile_img_3.png'
 import close_icon from './close.png'
+import house_banner from './House_banner.jpg'
 
 export const assets = {
     logo,
+    logo_main,
     logo_dark,
     cross_icon,
     menu_icon,
@@ -33,7 +36,8 @@ export const assets = {
     left_arrow,
     right_arrow,
     header_img,
-    close_icon
+    close_icon,
+    house_banner,
 }
 
 export const projectsData = [

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { assets, projectsData } from '../assets/assets';
+import { motion } from 'framer-motion';
 
 const Project = () => {
 // slide button 
@@ -39,10 +40,19 @@ const prevProject =() => {
   return (
     <div className='container mx-auto w-full overflow-hidden
      md:px-20 lg:px-32' id='project'> 
-        <h2 className='text-center text-2xl sm:text-4xl font-bold mb-2 text-[#cf0909]'>Projects  <span className='underline underline-offset-4 text-black decoration-1 under font-light'>Completed</span>
-        </h2>
-        <p className='text-[rgb(15_20_92)] max-w-80 text-center mx-auto mb-8'>Crafting Spaces, Building Legacies—Explore Our Portfolio
-</p>
+        <motion.h2
+         initial={{ opacity: 0, y: 1}}
+         whileInView={{opacity: 1, y:0 }}
+         transition={{ duration:1.5, delay: 0.2}}
+        
+        className='text-center text-2xl sm:text-4xl font-bold mb-2 text-[#cf0909]'>Projects  <span className='underline underline-offset-4 text-black decoration-1 under font-light'>Completed</span>
+        </motion.h2>
+        <motion.p
+        initial={{ opacity: 0, y: -1 }}
+        whileInView={{opacity: 1, y:0 }}
+        transition={{ duration:1.5, delay: 0.3}}
+        className='text-[rgb(15_20_92)] max-w-80 text-center mx-auto mb-8'>Crafting Spaces, Building Legacies—Explore Our Portfolio
+</motion.p>
 
 {/* slider button */}
 
@@ -55,7 +65,12 @@ const prevProject =() => {
     </button>
 </div>
 {/* project slider container */}
-<div className='overflow-hidden'>
+<motion.div
+initial={{ opacity: 0, x: -200 }}
+whileInView={{opacity: 1, x:0 }}
+transition={{ duration:1}}
+viewport={{ once: false }}
+className='overflow-hidden'>
 <div className='flex gap-8 transition-transform duration-500 ease-in-out'
     style={{transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`}}
     >
@@ -71,7 +86,7 @@ const prevProject =() => {
                 </div>
         ))}
     </div>
-</div>
+</motion.div>
 
 </div>
   );

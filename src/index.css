@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import "tailwindcss"; */
+/* @import "tailwindcss-animated"; */
+
 *{
     font-family: Outfit;
 }
+
+:root {
+    --default-animation-duration: 500ms;
+    --default-animation-delay: 0s;
+    --default-animation-timing-function: ease;
+  }

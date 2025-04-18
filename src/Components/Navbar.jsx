@@ -24,8 +24,8 @@ const Navbar = () => {
   <nav className="bg-black-800 ">
     <div className="fixed w-full bg-[#1417287d] top-0 left-0 z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
-        <div className="flex shrink-0 items-center">
-          <img  className="h-8 w-auto" src={assets.logo} alt="Your Company" />
+        <div className="flex shrink-0 items-center cursor-pointer" >
+          <img  className="h-[50px] w-[70px] bg-white" src={assets.logo_main} alt="Your Company" id='home' />
         </div>
         <div className="hidden sm:ml-6 md:block">
           <div className="flex space-x-4">
